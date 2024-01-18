@@ -47,6 +47,17 @@
     .header .top .mobie{
         display: block;
     }
+    .section1>.bottom{
+        flex-direction: column;
+        gap: 4rem;
+        margin-top: 5rem;
+    }
+    .section1>.bottom>.item{
+        text-align: center;
+    }
+    .section1>.bottom>.item>.p2{
+        max-width: 100%;
+    }
 }
 
 /* điện thoại di động, hiển thị chiều dọc */
