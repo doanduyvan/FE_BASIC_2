@@ -41,7 +41,8 @@
 
 .header .top .login .signin>a{
     color : var(--color-text-menu); 
-    width: 5rem;
+    width: 6rem;
+    text-align: center;
     display: block;
 }
 .header .top .login .signin>a:hover{
