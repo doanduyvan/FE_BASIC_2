@@ -39,11 +39,12 @@ ul{
     width: 100%;
     max-width: 1230px;
     margin: 0 auto;
-    /* padding-left: 3rem;
-    padding-right: 3rem; */
-    background-color: #020505;
 }
 
+.pd-3{
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
 .btn{
     display: block;
     text-align: center;
@@ -62,6 +63,10 @@ ul{
     width: 0;
     transition: all 0.15s linear;
     z-index: -1;
+}
+.btn1::after{
+    z-index: 1;
+    opacity: .1;
 }
 .btn:hover::after{
     width: 100%;

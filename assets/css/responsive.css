@@ -12,7 +12,24 @@
 /* Máy tính bảng loại to, hiển thị chiều dọc */
 
 @media screen and (max-width: 768px) {
-    
+    .header .bottom .right{
+        display: none;
+    }
+    .header .bottom .left{
+        align-items: center;
+    }
+    .header .bottom .left>.p1{
+        width: 100%;
+    }
+    .header .bottom .left>h1{
+        /* background-color: aqua; */
+        max-width: 100%;
+        text-align: center;
+    }
+    .header .bottom .left>.p2{
+        max-width: 100%;
+        text-align: center;
+    }
 }
 
 /* máy tính bảng, hiển thị chiều dọc */
