@@ -5,12 +5,10 @@
     position: fixed;
     top: 0;
     left: auto;
-    /* margin: auto auto; */
-    /* transform: translateX(-50%); */
     padding: 2rem 3rem;
     width: 100%;
     max-width: 1230px;
-    /* background-color: aqua; */
+    border-bottom: 1px solid rgba(168, 167, 167,0.5);
 }
 .header .top .menu ul{
     display: flex;
