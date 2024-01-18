@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+::after,
+::before{
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font: inherit;
+    font-size: 1.6rem;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+
+:root{
+    --color-primary : #1EBFC1;
+    --color-text-menu : #2F3A3B;
+    --color-text-menu-hover : #2F3A3B;
+    --color-text : #9DA6A5;
+    --color-text-bold : #0D1111;
+    --bg-color : #DEF6F5;
+    --color-white : #FFFFFF;
+}
+
+.container{
+    width: 100%;
+    max-width: 1230px;
+    margin: 0 auto;
+    /* padding-left: 3rem;
+    padding-right: 3rem; */
+    background-color: #020505;
+}
+
+.btn{
+    display: block;
+    text-align: center;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+}
+
+.btn::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    left: 0;
+    width: 0;
+    transition: all 0.15s linear;
+    z-index: -1;
+}
+.btn:hover::after{
+    width: 100%;
+    right: 0;
+    left: auto;
+}
+
+
+
+
+
+
+
+
+
+
+.temp{
+    width: 100%;
+    height: 1000px;
+    /* background-color: rgba(189, 141, 149,0.4); */
+}

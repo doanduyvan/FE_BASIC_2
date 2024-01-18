@@ -1,0 +1,119 @@
+/* PC */
+@media screen and (min-width: 1025px) {
+    
+}
+
+/* Máy tính bảng loại to, hiển thị chiều ngang */
+
+@media screen and (max-width: 1024px) {
+    
+}
+
+/* Máy tính bảng loại to, hiển thị chiều dọc */
+
+@media screen and (max-width: 768px) {
+    
+}
+
+/* máy tính bảng, hiển thị chiều dọc */
+
+@media screen and (max-width: 600px) {
+    
+}
+
+/* điện thoại di động, hiển thị chiều ngang */
+
+@media screen and (max-width: 480px) {
+    .header .top .login{
+        display: none;
+    }
+    .header .top .mobie{
+        display: block;
+    }
+}
+
+/* điện thoại di động, hiển thị chiều dọc */
+
+@media screen and (max-width: 320px) {
+    
+}
+
+
+
+
+
+
+
+/* Bất quy tắt */
+
+@media screen and (min-width: 901px) {
+    .header .top .menu .close{
+        display: none;
+    }
+    .header .top .menu .title{
+        display: none;
+    }
+}
+@media screen and (max-width: 900px) {
+    .header .top .menu{
+        position: fixed;
+        top: 0;
+        left: 100%;
+        opacity: 0;
+        height: 100vh;
+        width: 270px;
+        background-color: rgb(255, 255, 255);
+        z-index: 2;
+        transition: all 0.4s linear;
+        
+    }
+
+    .header .top .menu_mobile{
+        display: block;
+        cursor: pointer;
+    }
+    .header .top .menu .close{
+        position: absolute;
+        top: 10px;
+        left: 10px;
+    }
+    .header .top .menu .close:hover{
+        fill: red;
+    }
+    .header .top .menu .title{
+        text-align: center;
+        margin-top: 15px;
+        font-size: 2rem;
+    }
+    .header .top .menu>ul{
+        display: block;
+        margin-top: 15px;
+    }
+    .header .top .menu>ul>li+li{
+        border-top: 1px solid gray;
+        /* margin: 10px auto; */
+    }
+    .header .top .menu>ul>li>a{
+        width: auto;
+        text-align: left;
+        padding: 10px;
+    }
+    #check_menu:checked ~ .menu{
+        opacity: 1;
+        transform: translateX(-100%);
+    }
+    #check_menu:checked ~ .overlay{
+        display: block;
+        animation: fadein 0.4s linear forwards;
+    }
+}
+
+
+@keyframes fadein{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}

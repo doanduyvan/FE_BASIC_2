@@ -1,0 +1,82 @@
+.header .top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: auto;
+    /* margin: auto auto; */
+    /* transform: translateX(-50%); */
+    padding: 2rem 3rem;
+    width: 100%;
+    max-width: 1230px;
+    /* background-color: aqua; */
+}
+.header .top .menu ul{
+    display: flex;
+
+}
+
+.header .top .menu ul li{
+    margin: 0 20px;
+}
+
+.header .top .menu ul li a{
+    font-size: 1.6rem;
+    color: var(--color-text-menu);
+    display: block;
+    width: 6rem;
+    text-align: center;
+}
+.header .top .menu ul li a:hover,
+.header .top .menu ul li:first-child>a{
+    color: var(--color-text-menu-hover);
+    font-weight: bold;
+}
+.header .top .login{
+    display: flex;
+    align-items: center;
+    gap: 2rem;
+}
+
+.header .top .login .signin>a{
+    color : var(--color-text-menu); 
+    width: 5rem;
+    display: block;
+}
+.header .top .login .signin>a:hover{
+    color: var(--color-text-menu-hover);
+    font-weight: bold;
+   
+}
+
+.header .top .login .signup>a{
+    color: var(--color-primary);
+    font-size: 1.6rem;
+    border: 1px solid var(--color-primary);
+    padding: 10px 20px;
+}
+.header .top .login .signup>a::after{
+    background-color: var(--color-primary);
+}
+.header .top .login .signup>a:hover{
+    color: var(--color-white);
+}
+
+.header .top .menu_mobile{
+    display: none;
+}
+.header .top .mobie{
+    display: none;
+}
+.header .top .overlay{
+    position: fixed;
+    inset: 0;
+    background-color: rgba(211, 209, 209,0.5);
+    z-index: 1;
+    display: none;
+}
+
+.header .bottom{
+    margin-top: 120px;
+}
