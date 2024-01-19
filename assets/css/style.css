@@ -135,8 +135,13 @@
     height: 5rem;
     border-radius: 50%;
     box-shadow: 0 0 15px rgba(177, 164, 164,0.5);
+
 }
 .header .bottom .left>.submit>.play:hover{
+    border-top: 1px solid  red;
+    border-bottom: 1px solid rgb(31, 196, 25);
+    border-left: 1px solid blue;
+    border-right: 1px solid orangered;
     animation: play 2s linear infinite;
 }
 .header .bottom .left>.submit>.play>svg{
@@ -490,4 +495,93 @@
     top: 50%;
     left: -15%;
     background-color: #FFC147;
+}
+
+/* section 5 */
+
+.section5{
+    margin-top: 8rem;
+    background-color: var(--bg-color);
+    padding-top: 7rem;
+    padding-bottom: 7rem;
+}
+.section5>div{
+    display: flex;
+    align-items: center;
+}
+.section5>div>*{
+    flex: 1;
+}
+
+.section5 .left>h2{
+    font-family: 4.2rem;
+}
+.section5 .left>p{
+    font-size: 1.8rem;
+    color: var(--color-text);
+    margin-top: 1.8rem;
+}
+
+.section5 .right{
+    text-align: center;
+    text-align: center;
+}
+
+.section5 .right>button{
+    padding: 15px 30px;
+    display: inline-block;
+    font-size: 1.8rem;
+    color: var(--color-white);
+    background-color: var(--color-primary);
+}
+.section5 .right>button::after{
+    background-color: rgb(63, 63, 63);
+}
+
+.footer{
+    margin-top: 8rem;
+
+}
+.footer>.top{
+    display: flex;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.footer>.top>.item{
+    flex: 1;
+    /* background-color: #BF83FF; */
+}
+.footer>.top>.item.logo{
+    /* background-color: #1EBFC1; */
+    flex: 1.3;
+}
+.footer>.top>.item>.title{
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+.footer>.top>.item>ul>li{
+    margin-top: 1.5rem;
+}
+.footer>.top>.item>ul>li>a{
+    font-size: 1.6rem;
+    color: var(--color-text-menu);
+
+}
+
+.footer>.top>.item.link .icon{
+    display: inline-block;
+    /* background-color: #BF83FF; */
+    width: 1.7rem;
+}
+
+.footer>.bottom{
+    /* background-color: #1EBFC1; */
+    text-align: center;
+    margin-top: 3rem;
+}
+.footer>.bottom>p{
+    font-size: 1.8rem;
+    color: var(--color-text);
+    padding-top: 2rem;
+    padding-bottom: 4rem;
 }

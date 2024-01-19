@@ -58,6 +58,14 @@
     .section1>.bottom>.item>.p2{
         max-width: 100%;
     }
+    .section5>div{
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .section5>div>.left{
+        text-align: center;
+    }
+
 }
 
 /* điện thoại di động, hiển thị chiều dọc */
@@ -178,4 +186,18 @@
 .section2>.bottom>.item>.img{
     max-width: 50rem;
 }
+}
+
+@media screen and (max-width: 830px) {
+    .footer>.top{
+        flex-wrap: wrap;
+    }
+    .footer>.top>.item.logo{
+        width: 100%;
+        min-width: 100%;
+        text-align: center;
+    }
+    .footer>.top>.item{
+        min-width: 159px;
+    }
 }
