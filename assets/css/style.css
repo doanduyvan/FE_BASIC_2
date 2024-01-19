@@ -279,13 +279,14 @@
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    flex-wrap: wrap;
+    margin-top: 6rem;
+    /* flex-wrap: wrap; */
 }
 .section2>.bottom>.item{
     position: relative; 
 }
 .section2>.bottom>.item>.img{
-    width: 36rem;
+    max-width: 36rem;
     height: 39rem;
     border-radius: 10px;
     overflow: hidden;
@@ -347,4 +348,146 @@
 }
 .section2>.bottom>.item>.more>.info>span:last-child{
     margin-left: 1.2rem;
+}
+
+.section3{
+    margin-top: 16rem;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.section3>.item{
+    text-align: center;
+    /* background-color: aqua; */
+    padding: 20px;
+}
+.section3>.item>h2{
+    font-size: 6.2rem;
+}
+.section3>.item>p{
+    margin-top: 1rem;
+    font-size: 1.8rem;
+    color: var(--color-text);
+}
+
+/* section 4 */
+
+.section4{
+    display: flex;
+    margin-top: 10rem;
+}
+.section4>*{
+    flex: 1;
+}
+
+.section4>.left>.icon{
+    margin-top: 3.5rem;
+}
+.section4>.left>.p1{
+    font-size: 3.2rem;
+    color: var(--color-text);
+    margin-top: 2.7rem;
+    max-width: 390px;
+}
+.section4>.left>.p2{
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-top: 3rem;
+}
+.section4>.left>.p2>span{
+    font-weight: normal;
+    color: var(--color-text);
+}
+
+.section4>.left>.btn_arrow{
+    margin-top: 3rem;
+    display: flex;
+    gap: 3rem;
+}
+.section4>.left>.btn_arrow>button{
+    border: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-primary);
+    display: grid;
+    place-items: center;
+    cursor: pointer;
+}
+.section4>.left>.btn_arrow>button>div{
+    /* font-size: 2rem; */
+    width: fit-content;
+}
+.section4>.left>.btn_arrow>.arrow_left>div{
+    transform: translate(-2px,2px);
+}
+.section4>.left>.btn_arrow>.arrow_right>div{
+    transform: translate(2px,2px);
+}
+.section4>.left>.btn_arrow>.arrow_left:hover >div{
+    animation: arr_l 0.5s linear infinite;
+}
+.section4>.left>.btn_arrow>.arrow_right:hover >div{
+    animation: arr_r 0.5s linear infinite;
+}
+@keyframes arr_r {
+    from{
+    transform: translate(-100%,2px);
+    }
+    to{
+    transform: translate(100%,2px);
+    }
+}
+@keyframes arr_l {
+    from{
+    transform: translate(100%,2px);
+    }
+    to{
+    transform: translate(-100%,2px);
+    }
+}
+
+.section4>.right{
+    /* background-color: aqua; */
+    position: relative;
+    min-height: 400px;
+}
+.section4>.right>.img{
+    position: absolute;
+    border-radius: 50%;
+}
+.section4>.right>.img>img{
+    vertical-align: bottom;
+}
+.section4>.right>.img.img_primary{
+    background-color: rgb(180, 25, 77);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+
+.section4>.right>.img.img1{
+    top: 0;
+    left: 0;
+    background-color: #1EBFC1;
+}
+.section4>.right>.img.img2{
+    top: 3rem;
+    right: 0;
+    background-color: #BF83FF;
+}
+.section4>.right>.img.img3{
+    bottom: 1rem;
+    right: 2rem;
+    background-color: #B1DFDC;
+}
+.section4>.right>.img.img4{
+    bottom: 0;
+    left: 5%;
+    background-color: #FF947A;
+}
+.section4>.right>.img.img5{
+    top: 50%;
+    left: -15%;
+    background-color: #FFC147;
 }
