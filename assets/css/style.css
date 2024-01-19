@@ -209,6 +209,9 @@
     height: 100%;
     object-fit: cover;
 }
+
+/* section 1 */
+
 .section1{
     padding-top: 10rem;
 }
@@ -250,4 +253,98 @@
     font-size: 1.6rem;
     color: var(--color-text);
     max-width: 180px;
+}
+
+.section2{
+    padding-top: 10rem;
+}
+.section2>.top>.p1{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+    color: var(--color-text);
+}
+.section2>.top>h2{
+    font-size: 4.2rem;
+    max-width: 500px;
+    line-height: 5.6rem;
+    padding: 1.5rem 0;
+}
+.section2>.top>.p2{
+    font-size: 1.8rem;
+    color: var(--color-text);
+    max-width: 537px;
+    line-height: 2.5rem;
+}
+.section2>.bottom{
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+.section2>.bottom>.item{
+    position: relative; 
+}
+.section2>.bottom>.item>.img{
+    width: 36rem;
+    height: 39rem;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.section2>.bottom>.item>.img>img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.section2>.bottom>.item>.more{
+    background-color: var(--color-white);
+    position: absolute;
+    top: 80%;
+    left: 1.5rem;
+    right: 1.5rem;
+    border-radius: 8px;
+    padding: 2rem;
+    box-shadow: 0 0 10px rgba(192, 191, 191,0.3);   
+
+}
+.section2>.bottom>.item>.more>h2{
+    font-size: 2.2rem;
+}
+.section2>.bottom>.item>.more>.price{
+    margin-top: 1.5rem;
+    margin-bottom: 1rem;
+}
+.section2>.bottom>.item>.more>.price>.span1{
+    font-size: 1.6rem;
+    color: var(--color-text);
+    display: inline-block;
+    transform: translateY(-3px);
+}
+.section2>.bottom>.item>.more>.price>.span2{
+    font-size: 2.2rem;
+    font-weight: bold;
+}
+.section2>.bottom>.item>.more>.p1{
+    font-size: 1.5rem;
+    color: var(--color-text);
+    margin-bottom: 1.2rem;
+}
+.section2>.bottom>.item>.more>.info>*{
+    position: relative;
+    display: inline-block;
+    padding-left: 1.6rem;
+}
+.section2>.bottom>.item>.more>.info>span::before{
+    content: '';
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    background-color: var(--color-primary);
+}
+.section2>.bottom>.item>.more>.info>span:last-child{
+    margin-left: 1.2rem;
 }
