@@ -565,7 +565,10 @@
 .footer>.top>.item>ul>li>a{
     font-size: 1.6rem;
     color: var(--color-text-menu);
-
+}
+.footer>.top>.item>ul>li>a:hover{
+    color: black;
+    text-decoration: underline;
 }
 
 .footer>.top>.item.link .icon{
